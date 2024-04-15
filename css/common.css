@@ -1,0 +1,182 @@
+       /*   TASK 1   */
+* {
+    box-sizing: border-box;
+}
+button{
+    display: block;
+}
+body {
+    color: #2E2F42;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+.item {
+    background-color: #F6F6FE;
+    border-radius: 8px;
+    padding: 16px;
+}
+.item > h2{
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    margin-top: 0;
+    line-height: 1.5;
+}
+.categories {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 440px;
+    padding: 24px;
+}
+.category-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.category-list > li {
+    border: 1px solid #808080;
+    border-radius: 4px;
+    padding: 8px 16px;
+    width: auto;
+}
+
+      /*   TASK 2   */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    padding: 30px 50px;
+    gap: 48px 24px;
+}
+.gallery-item {
+    width: calc((100% - 48px) / 3);
+    overflow: hidden;
+}
+.gallery-item > img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+     /*   TASK 3   */
+.wrapper {
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+   }  
+input {
+    width: 30%;
+    min-width: 250px;
+    height: 40px;
+    border: 1px solid #808080;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #2E2F42;
+    padding: 8px 16px;
+}
+.wrapper > h1 {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+
+    /*   TASK 4   */
+.login-form {
+    padding: 24px;
+    width: 408px;
+}
+.login-form-label {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-top: 8px;
+}
+.login-form-label :last-child {
+    margin-bottom: 16px;
+}
+button {
+    width: 86px;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    background-color: #4E75FF;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+button:hover {
+    background-color: #6C8CFF;
+}
+label {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+}
+
+      /*   TASK 5  */
+button {
+    margin: 0;
+    width: 148px;
+}
+.task-body {
+    height: 90vh;
+}
+.widget {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+ 
+
+          /*   TASK 6  */
+.controls-div {
+    display: flex;
+    width: 100%;
+    padding: 32px;
+    gap: 16px;
+    background-color: #F6F6FE;
+    border-radius: 8px;
+    justify-content: center;
+}
+.boxes-div {
+    padding: 32px;
+    margin-top: 16px;
+    height: calc(100vh - 200px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #F6F6FE;
+    border-radius: 8px;
+}
+button {
+    width: 120px;
+}
+.controls-div > button:last-child {
+    background-color: #FF4E4E;
+}
+.controls-div>button:last-child:hover {
+    background-color: #FF7070;
+}
+.controls-div > input {
+    max-width: 150px;
+}
