@@ -9,13 +9,15 @@ const destroyBox = document.querySelector("button[data-destroy]");
 const boxesRender = document.querySelector("#boxes");
 
 function createBoxes(amount) {
-    if (100 >= amount >= 1) {
+    if ( amount >= 1 && amount <=100 ) {
         let side = 30;
+        const arrayOfElements = [];
         for (let i = 1; i <= amount; i++) {
             const color = getRandomHexColor();
-            boxesRender.insertAdjacentHTML("beforeend", `<div style="background-color: ${color}; width: ${side}px; height: ${side}px"></div>`);
+            arrayOfElements.push(`<div style="background-color: ${color}; width: ${side}px; height: ${side}px"></div>`);
             side += 10;
         }
+        boxesRender.insertAdjacentHTML("afterbegin", arrayOfElements.join(""));
     }
 };
 
